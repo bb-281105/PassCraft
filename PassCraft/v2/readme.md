@@ -1,5 +1,4 @@
-# 🔐 PassCraft — Personal Information Password Generator
-
+# 🔐 PassCraft
 PassCraft is an educational cybersecurity tool that demonstrates how weak passwords can be generated using personal information such as name, date of birth, city, and phone number.
 
 The project highlights why personal data should never be used in passwords and how attackers build targeted password wordlists.
@@ -144,3 +143,4 @@ This project is intended strictly for educational purposes.
 The author assumes no responsibility for misuse.
 
 Hack ethically. Learn responsibly.
+
