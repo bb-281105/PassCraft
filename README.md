@@ -5,6 +5,6 @@
 
 | Versions             | Description                                             |
 |----------------------|---------------------------------------------------------|
-| `v1`                 | Main GUI application logic                              |
-| `v1`                 | Project requirements (Python & Tkinter)                |
-| `v3`                 | Project documentation                                  |
+| `v1`                 | Web Based                                              |
+| `v1`                 | CLI based                                              |
+| `v3`                 | GUI based                                              |
