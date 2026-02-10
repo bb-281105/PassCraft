@@ -1,3 +1,4 @@
+# 🔐 PassCraft
 ## 🌟 Overview
 
 **PassCraft GUI** is a user-friendly desktop application that demonstrates how attackers can generate targeted password dictionaries from publicly available personal information. With an intuitive graphical interface, this tool takes four basic pieces of information and generates hundreds of potential password combinations for educational and security testing purposes.
@@ -121,3 +122,4 @@ Strong passwords should be **random, long, and unique**.
 Never base passwords on personal information.
 
 *PassCraft GUI – Learn security by understanding weaknesses.*
+
