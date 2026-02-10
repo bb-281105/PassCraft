@@ -1,0 +1,13 @@
+# Requirements for Personal Information Password Generator
+# Core dependencies
+python>=3.7
+
+# Standard library modules used (no pip installation needed):
+# - itertools
+# - re
+# - datetime
+# - typing
+# - json
+
+# Note: This project uses only Python standard library modules
+# No external dependencies required!

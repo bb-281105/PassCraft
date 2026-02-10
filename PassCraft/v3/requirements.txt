@@ -1,0 +1,17 @@
+# Requirements for Personal Information Password Generator GUI
+# Core dependencies
+python>=3.7
+
+# GUI Framework
+tkinter  # Usually included with Python, but listed for clarity
+
+# Standard library modules used (no pip installation needed):
+# - itertools
+# - re
+# - datetime
+# - typing
+# - threading
+# - os
+
+# Note: This project uses only Python standard library modules
+# No external dependencies required!
