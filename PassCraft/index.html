@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Crafting App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-key"></i> Password Crafting App</h1>
+            <p class="subtitle">Enter your information to generate possible password combinations</p>
+        </header>
+
+        <main>
+            <div class="app-wrapper">
+                <section class="input-section">
+                    <h2><i class="fas fa-user-circle"></i> Personal Information</h2>
+                    
+                    <form id="userInfoForm">
+                        <div class="form-group">
+                            <label for="firstName"><i class="fas fa-user"></i> First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName"><i class="fas fa-user-friends"></i> Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthDate"><i class="fas fa-birthday-cake"></i> Birth Date</label>
+                            <input type="date" id="birthDate">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="petName"><i class="fas fa-paw"></i> Pet Name</label>
+                            <input type="text" id="petName" placeholder="Enter your pet's name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="favoriteNumber"><i class="fas fa-hashtag"></i> Favorite Number</label>
+                            <input type="number" id="favoriteNumber" placeholder="e.g., 7, 13, 99" min="0" max="9999">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="hobby"><i class="fas fa-gamepad"></i> Hobby/Interest</label>
+                            <input type="text" id="hobby" placeholder="e.g., gaming, reading, football">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="city"><i class="fas fa-city"></i> City</label>
+                            <input type="text" id="city" placeholder="Enter your city">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="partnerName"><i class="fas fa-heart"></i> Partner/Spouse Name</label>
+                            <input type="text" id="partnerName" placeholder="Enter partner/spouse name">
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <h3><i class="fas fa-sliders-h"></i> Password Options</h3>
+                            
+                            <div class="checkbox-row">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="includeSpecial" checked>
+                                    <label for="includeSpecial">Include Special Characters</label>
+                                </div>
+                                
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="includeNumbers" checked>
+                                    <label for="includeNumbers">Include Numbers</label>
+                                </div>
+                                
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="capitalizeFirst" checked>
+                                    <label for="capitalizeFirst">Capitalize First Letters</label>
+                                </div>
+                            </div>
+                            
+                            <div class="slider-container">
+                                <label for="passwordCount">Number of Passwords to Generate: <span id="countValue">20</span></label>
+                                <input type="range" id="passwordCount" min="5" max="50" value="20">
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="generate-btn">
+                            <i class="fas fa-magic"></i> Generate Possible Passwords
+                        </button>
+                    </form>
+                </section>
+                
+                <section class="output-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-lock"></i> Generated Passwords</h2>
+                        <div class="action-buttons">
+                            <button id="copyAllBtn" class="action-btn copy-btn">
+                                <i class="far fa-copy"></i> Copy All
+                            </button>
+                            <button id="downloadBtn" class="action-btn download-btn">
+                                <i class="fas fa-download"></i> Download TXT
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="password-stats">
+                        <div class="stat-item">
+                            <span class="stat-value" id="totalCount">0</span>
+                            <span class="stat-label">Total</span>
+                        </div>
+                        <div class="stat-item stat-strong">
+                            <span class="stat-value" id="strongCount">0</span>
+                            <span class="stat-label">Strong</span>
+                        </div>
+                        <div class="stat-item stat-medium">
+                            <span class="stat-value" id="mediumCount">0</span>
+                            <span class="stat-label">Medium</span>
+                        </div>
+                        <div class="stat-item stat-weak">
+                            <span class="stat-value" id="weakCount">0</span>
+                            <span class="stat-label">Weak</span>
+                        </div>
+                    </div>
+                    
+                    <div class="passwords-container" id="passwordsContainer">
+                        <div class="empty-state">
+                            <i class="fas fa-keyboard"></i>
+                            <p>Your generated passwords will appear here</p>
+                            <p class="small">Fill out the form and click "Generate Possible Passwords"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="disclaimer">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p><strong>Disclaimer:</strong> These passwords are generated from personal information and are easily guessable. DO NOT use them for actual accounts. This tool is for educational purposes only.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Password Crafting App &copy; 2023 | For educational purposes only</p>
+            <p class="footer-note">This tool demonstrates how personal information can be used to create predictable passwords.</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
